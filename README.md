@@ -2,7 +2,7 @@
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/lokeshrangani/Project-Name.git
+   git clone https://github.com/lokeshrangani/react-laravel.git
    ```
 2. Goto react-app folder 
    ```sh
@@ -43,7 +43,7 @@
     ```
 10. Create .env file and Set API End point in react .env
     ```sh
-    REACT_APP_API_URL=PATH_TO_LARAVEL_PROJECT eg.http://localhost/omnify/laravel
+    REACT_APP_API_URL=PATH_TO_LARAVEL_PROJECT eg.http://localhost/react-laravel/laravel
     ```
 11. Set file/folder permissions.
     ```sh
