@@ -1,0 +1,103 @@
+==================REGISTER=======================
+var axios = require('axios');
+var data = JSON.stringify({
+    "first_name": "test",
+    "last_name": "test",
+    "email": "test@gmail.com",
+    "password": "test12"
+});
+
+var config = {
+    method: 'post',
+    url: 'PATH_TO_LARAVEL/api/register',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    data: data
+};
+
+axios(config)
+    .then(function (response) {
+        console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+==================REGISTER=======================
+
+==================LOGIN=======================
+var axios = require('axios');
+var data = JSON.stringify({
+    "email": "test@gmail.com",
+    "password": "test12"
+});
+
+var config = {
+    method: 'post',
+    url: 'PATH_TO_LARAVEL/api/login',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    data: data
+};
+
+axios(config)
+    .then(function (response) {
+        console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+
+==================LOGIN=======================
+
+==================ADD EVENT=======================
+var axios = require('axios');
+var data = JSON.stringify({
+    "name": "Weekly Meeting",
+    "description": "Sync-up with engineering team",
+    "start_time": "10:00 AM",
+    "end_time": "6:00 PM",
+    "selected_day": "Monday,Thursday"
+});
+
+var config = {
+    method: 'post',
+    url: 'PATH_TO_LARAVEL/api/v1/add-event',
+    headers: {
+        'Authorization': 'Bearer YOUR_ACCESS_TOKEN',
+        'Content-Type': 'application/json'
+    },
+    data: data
+};
+
+axios(config)
+    .then(function (response) {
+        console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+
+==================ADD EVENT=======================
+
+==================GET ALL SCHEDULES=======================
+var axios = require('axios');
+
+var config = {
+    method: 'post',
+    url: 'PATH_TO_LARAVEL/api/v1/get-event',
+    headers: {
+        'Authorization': 'Bearer YOUR_ACCESS_TOKEN'
+    }
+};
+
+axios(config)
+    .then(function (response) {
+        console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+
+==================GET ALL SCHEDULES=======================
