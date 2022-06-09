@@ -1,0 +1,27 @@
+.button-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rc-time-picker-panel-inner {
+    z-index: 1070;
+    width: 120px;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.rc-time-picker-input {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 40px;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+}
+
+.css-1s2u09g-control {
+    width: 100% !important;
+}

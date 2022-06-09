@@ -1,0 +1,16 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.border {
+    padding: 30px !important;
+    border-style: dotted;
+    border-radius: 15px;
+}
+
+.invalid-input {
+    border: 2px solid red !important;
+}
