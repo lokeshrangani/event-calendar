@@ -45,7 +45,11 @@
     ```sh
     REACT_APP_API_URL=PATH_TO_LARAVEL_PROJECT eg.http://localhost/react-laravel/laravel
     ```
-11. Set file/folder permissions.
+11. Run React
+    ```sh
+    npm start
+    ```
+12. Set file/folder permissions.
     ```sh
     chmod
     ```
