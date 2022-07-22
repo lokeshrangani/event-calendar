@@ -1,8 +1,36 @@
-### Installation
+# About
+1. Login/Register
+2. Create Event and recurring scheduled events for next 90 days.
+```sh
+   Name
+   Description
+   Start time
+   End Time
+   Day of the week
+```
+3. For Example: On 22nd July 2022 (friday), if a user is creating an event with following properties  
+```sh
+   Name - Event A
+   Description - Discuss ABC
+   Start time - 13:00
+   End Time - 14:00
+   Day of the week - Mon
+```
+4. Based on the above params, this will create schedules for next 90 days on every next-monday's dates at the event's start and end time. 
+
+# 🔗 Links
+Please Look at [Request](https://github.com/lokeshrangani/event-calendar/blob/master/request.txt) for API 
+
+# Tech Stack
+**Client:** React, Redux, Bootstrap CSS, React big calendar
+
+**Server:** Laravel
+
+# Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/lokeshrangani/react-laravel.git
+   git clone https://github.com/lokeshrangani/event-calendar.git
    ```
 2. Goto react-app folder 
    ```sh
@@ -43,13 +71,9 @@
     ```
 10. Create .env file and Set API End point in react .env
     ```sh
-    REACT_APP_API_URL=PATH_TO_LARAVEL_PROJECT eg.http://localhost/react-laravel/laravel
+    REACT_APP_API_URL=PATH_TO_LARAVEL_PROJECT eg.http://localhost/event-calendar/laravel
     ```
 11. Run React
     ```sh
     npm start
-    ```
-12. Set file/folder permissions.
-    ```sh
-    chmod
     ```
